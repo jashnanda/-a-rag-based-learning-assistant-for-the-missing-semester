@@ -1,0 +1,42 @@
+[
+  {
+    "question": "How do you undo the changes introduced by a previous git commit?",
+    "ground_truth": "Use 'git revert <commit>' to undo the changes introduced by a previous commit. However, if a commit involves several changes, revert might not be the best option. As an alternative, you can use 'git checkout' to recover a file version from a specific commit."
+  },
+  {
+    "question": "What are Vim's operating modes and how do you switch between them?",
+    "ground_truth": "Vim has five main modes: Normal (for moving around and making edits), Insert (for inserting text), Replace (for replacing text), Visual (plain, line, or block, for selecting text), and Command-line (for running commands). You press Escape to return to Normal mode from any other mode, and press 'i' to enter Insert mode from Normal mode."
+  },
+  {
+    "question": "What special variables does bash use to refer to script arguments?",
+    "ground_truth": "$0 is the name of the script. $1 through $9 are the first through ninth arguments. $@ refers to all arguments. $# is the number of arguments. $? is the return code of the previous command. $$ is the PID of the current script. $_ is the last argument of the last command."
+  },
+  {
+    "question": "What is the difference between single quotes and double quotes in bash?",
+    "ground_truth": "Single-quoted strings are literal — variable references like $foo are not expanded. Double-quoted strings do expand variables. For example, echo \"$foo\" prints the value of foo, while echo '$foo' prints the literal text $foo."
+  },
+  {
+    "question": "How does tmux organize its hierarchy of objects, and what is the key prefix for tmux commands?",
+    "ground_truth": "tmux organizes into sessions, windows, and panes. Sessions are independent workspaces containing one or more windows. Windows are like browser tabs. Panes are splits within a single window. All tmux keybindings use the prefix Ctrl+b followed by another key."
+  },
+  {
+    "question": "What is the purpose of the 'find' command and how do you search for all Python files recursively?",
+    "ground_truth": "The 'find' command recursively searches for files and directories. To find all Python files under the current directory, run: find . -name \"*.py\". You can filter by type using -type f for files or -type d for directories."
+  },
+  {
+    "question": "What are the properties of a cryptographic hash function?",
+    "ground_truth": "A cryptographic hash function is deterministic (same input always produces the same output), non-invertible (hard to find an input that produces a given hash), target collision resistant (given one input, hard to find another with the same hash), and collision resistant (hard to find any two distinct inputs with the same hash)."
+  },
+  {
+    "question": "What is the difference between printf debugging and using a debugger like pdb?",
+    "ground_truth": "Printf debugging adds print statements to extract information about program state and requires modifying and re-running the code. A debugger like Python's pdb lets you interact with a running program, halt execution at specific lines (breakpoints), step through instructions one at a time, inspect variables after a crash, and conditionally pause — without needing to know in advance what to print."
+  },
+  {
+    "question": "What is semantic versioning and what do the major, minor, and patch version numbers mean?",
+    "ground_truth": "Semantic versioning uses version numbers of the form major.minor.patch. A patch increment means backwards-compatible bug fixes. A minor increment means new backwards-compatible functionality was added. A major increment means backwards-incompatible changes were introduced. If a new release changes the major version, any software that depends on the old major version may break."
+  },
+  {
+    "question": "What are linters and how do they differ from code formatters?",
+    "ground_truth": "Code formatters automatically fix surface syntax issues like spacing, quote style, and line length. Linters run static analysis to find deeper antipatterns and potential bugs without executing the code. Linters come with configurable rule sets and can flag things like shadowed variables or dangerous code patterns."
+  }
+]

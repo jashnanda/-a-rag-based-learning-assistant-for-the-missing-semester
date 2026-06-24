@@ -1,0 +1,14 @@
+langchain
+langchain-community
+langchain-huggingface<1.0
+langchain-chroma<1.0
+unstructured[md]
+chromadb
+sentence-transformers
+rank_bm25
+anthropic
+python-dotenv
+ragas>=0.2
+langchain-anthropic
+datasets
+pandas
